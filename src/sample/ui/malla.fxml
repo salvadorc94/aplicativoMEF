@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #222222;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.MeshController">
+    <top>
+        <Label text="Malla" textFill="#65fc74" BorderPane.alignment="CENTER">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Label>
+    </top>
+    <bottom>
+        <JFXButton buttonType="RAISED" focusTraversable="false" onAction="#returnMenu" prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #5c5a59;" text="Atrás" textFill="#65fc74" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="5.0" />
+            </BorderPane.margin>
+        </JFXButton>
+    </bottom>
+</BorderPane>
