@@ -6,10 +6,9 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #222222;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.DomainController">
+<BorderPane fx:id="borderPane" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #222222;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.DomainController">
    <top>
-      <Label text="Dominio" textFill="#65fc74" BorderPane.alignment="CENTER">
+      <Label focusTraversable="false" text="Dominio" textFill="#65fc74" BorderPane.alignment="CENTER">
          <font>
             <Font size="36.0" />
          </font>
@@ -22,4 +21,17 @@
          </BorderPane.margin>
       </JFXButton>
    </bottom>
+   <center>
+      <JFXButton buttonType="RAISED" focusTraversable="false" onAction="#showDomain" prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #5c5a59;" text="Mostrar Dominio" textFill="#65fc74" BorderPane.alignment="CENTER" />
+   </center>
+   <left>
+      <Label text="Antes de Mostrar Dominio Leer:&#10;Para mover el modelo 3D son los siguientes controles:&#10;Q: Rota en sentido horario.&#10;E: Rota en sentido antihorario.&#10;NumPad 8: Rota hacia arriba.&#10;NumPad 2: Rota hacia abajo.&#10;NumPad 4: Rota hacia la izquierda.&#10;NumPad 6: Rota hacia la derecha." textFill="#65fc74" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="20.0" />
+         </BorderPane.margin>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </left>
 </BorderPane>
