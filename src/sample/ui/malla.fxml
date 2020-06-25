@@ -3,11 +3,14 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #222222;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.MeshController">
+<!--Agradecimientos especiales a https://www.flaticon.com/authors/pixel-perfect por la imagen del Tetraedro -->
+<!--Agradecimientos especiales a https://www.flaticon.com/authors/alfredo-hernandez por la imagen de la cara triste -->
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="543.0" prefWidth="728.0" style="-fx-background-color: #222222;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.MeshController">
     <top>
         <Label text="Malla" textFill="#65fc74" BorderPane.alignment="CENTER">
             <font>
@@ -22,4 +25,49 @@
             </BorderPane.margin>
         </JFXButton>
     </bottom>
+   <left>
+      <VBox alignment="CENTER" spacing="40.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="10.0" />
+         </BorderPane.margin>
+         <children>
+            <Label prefHeight="34.0" prefWidth="182.0" text="Selecciona la figura más adecuada&#10;para hacer la malla" textAlignment="CENTER" textFill="#65fc74">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+            </Label>
+            <ImageView fx:id="cuboView" fitHeight="106.0" fitWidth="128.0" onMouseClicked="#clicCube" onMouseEntered="#hoverCube" onMouseExited="#exitCube" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/malla_cubo.png" />
+               </image>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fx:id="tetraView" fitHeight="125.0" fitWidth="117.0" onMouseClicked="#clicTetra" onMouseEntered="#hoverTetra" onMouseExited="#exitTetra" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/malla_tetra.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label fx:id="label" focusTraversable="false" text="NO" textFill="#65fc74" visible="false">
+               <font>
+                  <Font name="Candara" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <ImageView fx:id="mesh" fitHeight="404.0" fitWidth="481.0" pickOnBounds="true" preserveRatio="true" visible="false" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../resources/mesh.PNG" />
+         </image>
+      </ImageView>
+   </center>
 </BorderPane>
