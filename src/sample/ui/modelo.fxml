@@ -3,9 +3,10 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
-
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #222222;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.ModelController">
     <top>
@@ -22,4 +23,11 @@
             </BorderPane.margin>
         </JFXButton>
     </bottom>
+   <center>
+      <ImageView fx:id="questionImage" fitHeight="137.0" fitWidth="124.0" onMouseEntered="#onMouseEnter" onMouseExited="#onMouseExit" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../resources/QuestionMark.png" />
+         </image>
+      </ImageView>
+   </center>
 </BorderPane>
