@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #222222;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.MefController">
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="789.0" prefWidth="1176.0" style="-fx-background-color: #222222;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.MefController">
     <top>
         <Label text="Método de los Elementos Finitos (MEF)" textFill="#65fc74" BorderPane.alignment="CENTER">
             <font>
@@ -15,11 +16,20 @@
             </font>
         </Label>
     </top>
-    <bottom>
-        <JFXButton buttonType="RAISED" focusTraversable="false" onAction="#returnMenu" prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #5c5a59;" text="Atrás" textFill="#65fc74" BorderPane.alignment="CENTER">
-            <BorderPane.margin>
-                <Insets bottom="5.0" />
-            </BorderPane.margin>
-        </JFXButton>
-    </bottom>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="941.0" spacing="30.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton buttonType="RAISED" focusTraversable="false" onAction="#goBack" prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #5c5a59;" text="&lt;---" textFill="#65fc74" />
+              <JFXButton buttonType="RAISED" focusTraversable="false" onAction="#returnMenu" prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #5c5a59;" text="Menú" textFill="#65fc74" />
+            <JFXButton fx:id="boton" buttonType="RAISED" focusTraversable="false" onAction="#nextImg" prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #5c5a59;" text="---&gt;" textFill="#65fc74" />
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <ImageView fx:id="imagen" fitHeight="701.0" fitWidth="1017.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../resources/mef/mef1.PNG" />
+         </image>
+      </ImageView>
+   </center>
 </BorderPane>
