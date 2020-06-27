@@ -30,7 +30,7 @@ public class MefController implements Initializable {
 
     private List<Image> images = new ArrayList<>();
     private int counter = 0;
-    private final int nimages = 8;
+    private final int nimages = 9;
 
     @FXML
     private void returnMenu(ActionEvent event) throws IOException {
@@ -100,5 +100,6 @@ public class MefController implements Initializable {
         images.add(new Image(getClass().getResource("../resources/mef/mef6.png").toExternalForm()));
         images.add(new Image(getClass().getResource("../resources/mef/mef7.png").toExternalForm()));
         images.add(new Image(getClass().getResource("../resources/mef/mef8.png").toExternalForm()));
+        images.add(new Image(getClass().getResource("../resources/mef/mef9.png").toExternalForm()));
     }
 }
