@@ -6,6 +6,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
 <BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="789.0" prefWidth="1176.0" style="-fx-background-color: #222222;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.MefController">
@@ -17,13 +18,18 @@
         </Label>
     </top>
    <bottom>
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="941.0" spacing="30.0" BorderPane.alignment="CENTER">
+      <StackPane BorderPane.alignment="CENTER">
          <children>
-            <JFXButton buttonType="RAISED" focusTraversable="false" onAction="#goBack" prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #5c5a59;" text="&lt;---" textFill="#65fc74" />
-              <JFXButton buttonType="RAISED" focusTraversable="false" onAction="#returnMenu" prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #5c5a59;" text="Menú" textFill="#65fc74" />
-            <JFXButton fx:id="boton" buttonType="RAISED" focusTraversable="false" onAction="#nextImg" prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #5c5a59;" text="---&gt;" textFill="#65fc74" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="941.0" spacing="30.0">
+               <children>
+                  <JFXButton buttonType="RAISED" focusTraversable="false" onAction="#goBack" prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #5c5a59;" text="&lt;---" textFill="#65fc74" />
+                    <JFXButton buttonType="RAISED" focusTraversable="false" onAction="#returnMenu" prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #5c5a59;" text="Menú" textFill="#65fc74" />
+                  <JFXButton fx:id="boton" buttonType="RAISED" focusTraversable="false" onAction="#nextImg" prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #5c5a59;" text="---&gt;" textFill="#65fc74" />
+               </children>
+            </HBox>
+            <JFXButton fx:id="component" buttonType="RAISED" disable="true" focusTraversable="false" onAction="#showComponents" prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #5c5a59;" text="Definir Componentes" textFill="#65fc74" translateX="450.0" />
          </children>
-      </HBox>
+      </StackPane>
    </bottom>
    <center>
       <ImageView fx:id="imagen" fitHeight="701.0" fitWidth="1017.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">

@@ -27,6 +27,8 @@ public class MefController implements Initializable {
     private ImageView imagen;
     @FXML
     private JFXButton boton;
+    @FXML
+    private  JFXButton component;
 
     private List<Image> images = new ArrayList<>();
     private int counter = 0;
@@ -38,6 +40,15 @@ public class MefController implements Initializable {
         Scene newScene = new Scene(domain);
         //Stage window = new Stage(); Nuevo
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        window.setScene(newScene);
+        window.show();
+    }
+
+    @FXML
+    private void showComponents(ActionEvent event) throws  IOException {
+        Parent domain = FXMLLoader.load(getClass().getResource("../ui/componentes.fxml"));
+        Scene newScene = new Scene(domain);
+        Stage window = new Stage();
         window.setScene(newScene);
         window.show();
     }
@@ -64,6 +75,11 @@ public class MefController implements Initializable {
             });
             fade.play();
         }
+        if(counter == nimages-1){
+            component.setVisible(true);
+            component.setDisable(false);
+        }
+
     }
     @FXML
     private void goBack(ActionEvent event) throws  IOException{
@@ -87,6 +103,10 @@ public class MefController implements Initializable {
             });
             fade.play();
         }
+        if(counter == nimages-2){
+            component.setVisible(false);
+            component.setDisable(true);
+        }
     }
 
     @Override
@@ -101,5 +121,6 @@ public class MefController implements Initializable {
         images.add(new Image(getClass().getResource("../resources/mef/mef7.png").toExternalForm()));
         images.add(new Image(getClass().getResource("../resources/mef/mef8.png").toExternalForm()));
         images.add(new Image(getClass().getResource("../resources/mef/mef9.png").toExternalForm()));
+        component.setVisible(false);
     }
 }
