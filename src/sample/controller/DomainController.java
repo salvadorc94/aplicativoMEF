@@ -45,7 +45,7 @@ public class DomainController {
         //Move to center of the screen
         group.translateXProperty().set(WIDTH / 2);
         group.translateYProperty().set(HEIGHT / 2);
-        group.translateZProperty().set(-1200);
+        group.translateZProperty().set(-800);
         Stage window = new Stage();
 
         //Add keyboard control.
