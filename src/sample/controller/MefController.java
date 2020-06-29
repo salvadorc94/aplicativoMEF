@@ -41,6 +41,8 @@ public class MefController implements Initializable {
         //Stage window = new Stage(); Nuevo
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
         window.setScene(newScene);
+        window.setX(652);
+        window.setY(200);
         window.show();
     }
 

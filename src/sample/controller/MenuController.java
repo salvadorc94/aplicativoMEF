@@ -49,6 +49,8 @@ public class MenuController {
         //Stage window = new Stage(); Nuevo
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
         window.setScene(newScene);
+        window.setX(400);
+        window.setY(100);
         window.show();
     }
     @FXML
