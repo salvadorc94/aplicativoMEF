@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="789.0" prefWidth="1176.0" style="-fx-background-color: #222222;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.MefController">
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #222222;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.MefController">
     <top>
         <Label text="Método de los Elementos Finitos (MEF)" textFill="#65fc74" BorderPane.alignment="CENTER">
             <font>
@@ -27,7 +27,7 @@
                   <JFXButton fx:id="boton" buttonType="RAISED" focusTraversable="false" onAction="#nextImg" prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #5c5a59;" text="---&gt;" textFill="#65fc74" />
                </children>
             </HBox>
-            <JFXButton fx:id="component" buttonType="RAISED" disable="true" focusTraversable="false" onAction="#showComponents" prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #5c5a59;" text="Definir Componentes" textFill="#65fc74" translateX="450.0" />
+            <JFXButton fx:id="component" buttonType="RAISED" disable="true" focusTraversable="false" onAction="#showComponents" prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #5c5a59;" text="Definir Componentes" textFill="#65fc74" translateX="400.0" />
          </children>
       </StackPane>
    </bottom>

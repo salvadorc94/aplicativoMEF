@@ -27,8 +27,8 @@ public class DomainController {
         window.show();
     }
 
-    private static final int WIDTH = 1000;
-    private static final int HEIGHT = 800;
+    private static final int WIDTH = 800;
+    private static final int HEIGHT = 600;
     @FXML
     private void showDomain(ActionEvent event) throws IOException {
         //Agradecimiento especial a afsal villan de http://www.genuinecoder.com  por su poderoso código :D Wenas Ing por si lee esto xD.
