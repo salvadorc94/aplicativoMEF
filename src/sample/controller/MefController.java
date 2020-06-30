@@ -36,7 +36,7 @@ public class MefController implements Initializable {
 
     @FXML
     private void returnMenu(ActionEvent event) throws IOException {
-        Parent domain = FXMLLoader.load(getClass().getResource("../ui/menu.fxml"));
+        Parent domain = FXMLLoader.load(getClass().getResource("/sample/ui/menu.fxml"));
         Scene newScene = new Scene(domain);
         //Stage window = new Stage(); Nuevo
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -48,7 +48,7 @@ public class MefController implements Initializable {
 
     @FXML
     private void showComponents(ActionEvent event) throws  IOException {
-        Parent domain = FXMLLoader.load(getClass().getResource("../ui/componentes.fxml"));
+        Parent domain = FXMLLoader.load(getClass().getResource("/sample/ui/componentes.fxml"));
         Scene newScene = new Scene(domain);
         Stage window = new Stage();
         window.setScene(newScene);
@@ -114,15 +114,27 @@ public class MefController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         //Llenando la lista
-        images.add(new Image(getClass().getResource("../resources/mef/mef1.png").toExternalForm()));
-        images.add(new Image(getClass().getResource("../resources/mef/mef2.png").toExternalForm()));
-        images.add(new Image(getClass().getResource("../resources/mef/mef3.png").toExternalForm()));
-        images.add(new Image(getClass().getResource("../resources/mef/mef4.png").toExternalForm()));
-        images.add(new Image(getClass().getResource("../resources/mef/mef5.png").toExternalForm()));
-        images.add(new Image(getClass().getResource("../resources/mef/mef6.png").toExternalForm()));
-        images.add(new Image(getClass().getResource("../resources/mef/mef7.png").toExternalForm()));
-        images.add(new Image(getClass().getResource("../resources/mef/mef8.png").toExternalForm()));
-        images.add(new Image(getClass().getResource("../resources/mef/mef9.png").toExternalForm()));
+
+        images.add(imagen.getImage());
+        images.add(new Image("/sample/resources/mef/mef2.PNG"));
+        images.add(new Image("/sample/resources/mef/mef3.PNG"));
+        images.add(new Image("/sample/resources/mef/mef4.PNG"));
+        images.add(new Image("/sample/resources/mef/mef5.PNG"));
+        images.add(new Image("/sample/resources/mef/mef6.PNG"));
+        images.add(new Image("/sample/resources/mef/mef7.PNG"));
+        images.add(new Image("/sample/resources/mef/mef8.PNG"));
+        images.add(new Image("/sample/resources/mef/mef9.PNG"));
+        /*
+        images.add(new Image(getClass().getResource("/sample/resources/mef/mef1.png").toExternalForm()));
+        images.add(new Image(getClass().getResource("/sample/resources/mef/mef2.png").toExternalForm()));
+        images.add(new Image(getClass().getResource("/sample/resources/mef/mef3.png").toExternalForm()));
+        images.add(new Image(getClass().getResource("/sample/resources/mef/mef4.png").toExternalForm()));
+        images.add(new Image(getClass().getResource("/sample/resources/mef/mef5.png").toExternalForm()));
+        images.add(new Image(getClass().getResource("/sample/resources/mef/mef6.png").toExternalForm()));
+        images.add(new Image(getClass().getResource("/sample/resources/mef/mef7.png").toExternalForm()));
+        images.add(new Image(getClass().getResource("/sample/resources/mef/mef8.png").toExternalForm()));
+        images.add(new Image(getClass().getResource("/sample/resources/mef/mef9.png").toExternalForm()));
+        */
         component.setVisible(false);
     }
 }

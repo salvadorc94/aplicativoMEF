@@ -81,7 +81,7 @@ public class ComponentController implements Initializable {
                     case "1":
                         try {
                             FXMLLoader loader = new FXMLLoader();
-                            loader.setLocation(getClass().getResource("../ui/mostrarComponente.fxml"));
+                            loader.setLocation(getClass().getResource("/sample/ui/mostrarComponente.fxml"));
                             Parent domain = loader.load();
                             Scene newScene = new Scene(domain);
                             ShowComponentController controller = loader.getController();
@@ -98,7 +98,7 @@ public class ComponentController implements Initializable {
                     case "2":
                         try {
                             FXMLLoader loader = new FXMLLoader();
-                            loader.setLocation(getClass().getResource("../ui/mostrarComponente.fxml"));
+                            loader.setLocation(getClass().getResource("/sample/ui/mostrarComponente.fxml"));
                             Parent domain = loader.load();
                             Scene newScene = new Scene(domain);
                             ShowComponentController controller = loader.getController();
@@ -115,7 +115,7 @@ public class ComponentController implements Initializable {
                     case "3":
                         try {
                             FXMLLoader loader = new FXMLLoader();
-                            loader.setLocation(getClass().getResource("../ui/mostrarComponente.fxml"));
+                            loader.setLocation(getClass().getResource("/sample/ui/mostrarComponente.fxml"));
                             Parent domain = loader.load();
                             Scene newScene = new Scene(domain);
                             ShowComponentController controller = loader.getController();
@@ -132,7 +132,7 @@ public class ComponentController implements Initializable {
                     case "4":
                         try {
                             FXMLLoader loader = new FXMLLoader();
-                            loader.setLocation(getClass().getResource("../ui/mostrarComponente.fxml"));
+                            loader.setLocation(getClass().getResource("/sample/ui/mostrarComponente.fxml"));
                             Parent domain = loader.load();
                             Scene newScene = new Scene(domain);
                             ShowComponentController controller = loader.getController();
@@ -149,7 +149,7 @@ public class ComponentController implements Initializable {
                     case "5":
                             try {
                                 FXMLLoader loader = new FXMLLoader();
-                                loader.setLocation(getClass().getResource("../ui/mostrarComponente.fxml"));
+                                loader.setLocation(getClass().getResource("/sample/ui/mostrarComponente.fxml"));
                                 Parent domain = loader.load();
                                 Scene newScene = new Scene(domain);
                                 ShowComponentController controller = loader.getController();
@@ -166,7 +166,7 @@ public class ComponentController implements Initializable {
                     case "6":
                         try {
                             FXMLLoader loader = new FXMLLoader();
-                            loader.setLocation(getClass().getResource("../ui/mostrarComponente.fxml"));
+                            loader.setLocation(getClass().getResource("/sample/ui/mostrarComponente.fxml"));
                             Parent domain = loader.load();
                             Scene newScene = new Scene(domain);
                             ShowComponentController controller = loader.getController();

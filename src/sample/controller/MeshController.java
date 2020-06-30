@@ -32,13 +32,13 @@ public class MeshController implements Initializable {
     @FXML
     private Label label;
 
-    private Image sadFace = new Image(getClass().getResource("../resources/sadFace.png").toExternalForm());
-    private Image malla = new Image(getClass().getResource("../resources/mesh.png").toExternalForm());
+    private Image sadFace = new Image(getClass().getResource("/sample/resources/sadFace.png").toExternalForm());
+    private Image malla = new Image(getClass().getResource("/sample/resources/mesh.PNG").toExternalForm());
 
 
     @FXML
     private void returnMenu(ActionEvent event) throws IOException {
-        Parent domain = FXMLLoader.load(getClass().getResource("../ui/menu.fxml"));
+        Parent domain = FXMLLoader.load(getClass().getResource("/sample/ui/menu.fxml"));
         Scene newScene = new Scene(domain);
         //Stage window = new Stage(); Nuevo
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();

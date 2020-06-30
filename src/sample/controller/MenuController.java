@@ -16,7 +16,7 @@ public class MenuController {
 
     @FXML
     private void openDomain(ActionEvent event) throws IOException {
-        Parent domain = FXMLLoader.load(getClass().getResource("../ui/dominio.fxml"));
+        Parent domain = FXMLLoader.load(getClass().getResource("/sample/ui/dominio.fxml"));
         Scene newScene = new Scene(domain);
         //Stage window = new Stage(); Nuevo
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -25,7 +25,7 @@ public class MenuController {
     }
     @FXML
     private void openAssembly(ActionEvent event) throws IOException {
-        Parent domain = FXMLLoader.load(getClass().getResource("../ui/ensamblaje.fxml"));
+        Parent domain = FXMLLoader.load(getClass().getResource("/sample/ui/ensamblaje.fxml"));
         Scene newScene = new Scene(domain);
         //Stage window = new Stage(); Nuevo
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -35,7 +35,7 @@ public class MenuController {
     }
     @FXML
     private void openMesh(ActionEvent event) throws IOException {
-        Parent domain = FXMLLoader.load(getClass().getResource("../ui/malla.fxml"));
+        Parent domain = FXMLLoader.load(getClass().getResource("/sample/ui/malla.fxml"));
         Scene newScene = new Scene(domain);
         //Stage window = new Stage(); Nuevo
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -44,7 +44,7 @@ public class MenuController {
     }
     @FXML
     private void openMef(ActionEvent event) throws IOException {
-        Parent domain = FXMLLoader.load(getClass().getResource("../ui/mef.fxml"));
+        Parent domain = FXMLLoader.load(getClass().getResource("/sample/ui/mef.fxml"));
         Scene newScene = new Scene(domain);
         //Stage window = new Stage(); Nuevo
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -55,7 +55,7 @@ public class MenuController {
     }
     @FXML
     private void openModel(ActionEvent event) throws IOException {
-        Parent domain = FXMLLoader.load(getClass().getResource("../ui/modelo.fxml"));
+        Parent domain = FXMLLoader.load(getClass().getResource("/sample/ui/modelo.fxml"));
         Scene newScene = new Scene(domain);
         //Stage window = new Stage(); Nuevo
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -64,7 +64,7 @@ public class MenuController {
     }
     @FXML
     private void openTable(ActionEvent event) throws IOException {
-        Parent domain = FXMLLoader.load(getClass().getResource("../ui/tabla.fxml"));
+        Parent domain = FXMLLoader.load(getClass().getResource("/sample/ui/tabla.fxml"));
         Scene newScene = new Scene(domain);
         //Stage window = new Stage(); Nuevo
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();

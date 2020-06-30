@@ -19,12 +19,12 @@ public class ModelController{
 
     @FXML
     private ImageView questionImage;
-    private Image question = new Image(getClass().getResource("../resources/QuestionMark.png").toExternalForm());
-    private Image modelo = new Image(getClass().getResource("../resources/modelo.png").toExternalForm());
+    private Image question = new Image(getClass().getResource("/sample/resources/QuestionMark.png").toExternalForm());
+    private Image modelo = new Image(getClass().getResource("/sample/resources/modelo.PNG").toExternalForm());
 
     @FXML
     private void returnMenu(ActionEvent event) throws IOException {
-        Parent domain = FXMLLoader.load(getClass().getResource("../ui/menu.fxml"));
+        Parent domain = FXMLLoader.load(getClass().getResource("/sample/ui/menu.fxml"));
         Scene newScene = new Scene(domain);
         //Stage window = new Stage(); Nuevo
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
