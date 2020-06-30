@@ -57,16 +57,16 @@ public class DomainController {
                 case E:
                     group.rotateByZ(-10);
                     break;
-                case NUMPAD8:
+                case K:
                     group.rotateByX(10);
                     break;
-                case NUMPAD2:
+                case I:
                     group.rotateByX(-10);
                     break;
-                case NUMPAD6:
+                case J:
                     group.rotateByY(10);
                     break;
-                case NUMPAD4:
+                case L:
                     group.rotateByY(-10);
                     break;
             }
