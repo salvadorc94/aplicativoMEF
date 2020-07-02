@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
-  <artifact type="javafx" name="aplicativoMEF">
-    <output-path>$PROJECT_DIR$/out/artifacts/aplicativoMEF</output-path>
+  <artifact type="javafx" name="00117716">
+    <output-path>$PROJECT_DIR$/out/artifacts/00117716</output-path>
     <properties id="javafx-properties">
       <options>
         <option name="appClass" value="sample.Main" />
